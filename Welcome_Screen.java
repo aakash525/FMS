@@ -10,7 +10,6 @@ public class Welcome_Screen {
   JButton reg;
 
   static int id = 0;
-  int id;
   String type,name,username,pass,dob,address,department;
 
   Welcome_Screen(){
