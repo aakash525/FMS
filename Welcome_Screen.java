@@ -1,4 +1,3 @@
-import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
@@ -9,7 +8,6 @@ public class Welcome_Screen {
   JButton login;
   JButton reg;
 
-  static int id = 0;
   String type,name,username,pass,dob,address,department;
 
   Welcome_Screen(){
@@ -28,8 +26,6 @@ public class Welcome_Screen {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     label_1.setVisible(true);
     label_2.setVisible(true);
-    login.setVisible(true);
-    reg.setVisible(true);
     frame.add(panel);
     panel.add(label_1);
     panel.add(label_2);
@@ -41,26 +37,15 @@ public class Welcome_Screen {
     reg.setBounds(460,350,100,30);
 
     login.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e){
+            public void actionPerformed(ActionEvent e){
 
-			}
-		});
+            }
+        });
 
     reg.addActionListener(new ActionListener(){
-			public void actionPerformed(ActionEvent e){
-        register();
-			}
-		});
-  }
-
-  void register(){
-    JLabel ID = new JLabel("ID : " + ++id);
-    JLabel Type = new JLabel("Type");
-    JLabel Name = new JLabel("Name");
-    JLabel UserName = new JLabel("Userame");
-    JLabel Password = new JLabel("Password");
-    JLabel DOB= new JLabel("Date Of Birth");
-    JLabel Address = new JLabel("Address");
-    JLabel Department = new JLabel("Department");
+            public void actionPerformed(ActionEvent e){
+        Register R = new Register();
+            }
+        });
   }
 }
