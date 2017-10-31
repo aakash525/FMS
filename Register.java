@@ -115,6 +115,8 @@ public class Register{
 	  {	}
   }
   
+  //checking username function 
+  
   public int checkUsername()
   {
 	  int a = 1;
